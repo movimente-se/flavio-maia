@@ -1,21 +1,48 @@
-# MOVIMENTE-SE
-### Flávio Maia
+# 📘 MOVIMENTE-SE
+### Um chamado para sair da estagnação e assumir o movimento da própria vida
 
 ![Capa do livro MOVIMENTE-SE](capa-do-livro-MOVIMENTE-SE-2027.png)
 
-**MOVIMENTE-SE** é um chamado direto para quem se sente preso, parado ou desconectado dos próprios sonhos.
+**Autor:** Flávio Maia  
 
-Se em algum momento você já disse:
-> "Minha vida não anda"  
-> "Não sei por onde começar"
+---
 
-Então este livro é para você.
+## Sobre o livro
 
-Aqui você vai refletir sobre:
-- ciclos de estagnação
-- como a inércia mental e emocional nos paralisa
-- caminhos práticos para retomar o movimento da vida
+Muitas pessoas sentem que a vida está parada, como se algo estivesse bloqueando
+seus sonhos, projetos e decisões.
 
-## Adquira o livro
+**MOVIMENTE-SE** é um convite direto para romper a inércia, despertar a
+consciência e dar passos práticos rumo a uma vida com mais propósito,
+clareza e ação.
 
-[Comprar por R$29,90](SEU-LINK-DE-COMPRA)
+Se você sente que pode mais, que nasceu para avançar e não quer viver apenas
+esperando as coisas acontecerem, este livro é para você.
+
+---
+
+## 📖 Escolha a versão do livro
+
+📱 **Versão digital (E-book)**  
+Leitura imediata no celular, tablet ou computador.
+
+👉 [Comprar versão digital](LINK-DO-EBOOK)
+
+---
+
+📚 **Livro físico**  
+Receba o livro impresso em sua casa.
+
+👉 [Comprar livro físico](https://loja.uiclap.com/titulo/ua97732/)
+
+---
+
+## Sobre o autor
+
+Flávio Maia escreve sobre desenvolvimento pessoal, propósito e ação
+consciente. Sua missão é provocar reflexões que levem as pessoas a saírem
+da estagnação e assumirem o movimento da própria vida.
+
+---
+
+© 2026 Flávio Maia
