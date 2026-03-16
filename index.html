@@ -1,72 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MOVIMENTE-SE - Flávio Maia</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 20px auto;
-      padding: 0 15px;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .cover-image {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .description p {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
-    .buy-button {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 30px auto;
-      padding: 15px 0;
-      background-color: #008CBA;
-      color: white;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .buy-button:hover {
-      background-color: #005f73;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MOVIMENTE-SE – Flávio Maia</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f5f5f5;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:white;
+}
+
+h1{
+font-size:40px;
+margin-bottom:5px;
+}
+
+h2{
+color:#555;
+margin-top:0;
+}
+
+.cover{
+max-width:350px;
+margin:30px auto;
+display:block;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+border-radius:10px;
+}
+
+.description{
+font-size:18px;
+line-height:1.6;
+color:#333;
+margin-top:20px;
+}
+
+.benefits{
+text-align:left;
+max-width:600px;
+margin:30px auto;
+font-size:18px;
+}
+
+.benefits li{
+margin-bottom:10px;
+}
+
+.buy-button{
+display:inline-block;
+margin-top:30px;
+padding:18px 35px;
+background:#008CBA;
+color:white;
+font-size:20px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.buy-button:hover{
+background:#005f73;
+}
+
+.footer{
+margin-top:40px;
+font-size:14px;
+color:#777;
+}
+
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>MOVIMENTE-SE...</h1>
-    <h2>Flávio Maia</h2>
-  </header>
+<div class="container">
 
-  <!-- Imagem da capa do livro -->
-  <img src="capa-do-livro-MOVIMENTE-SE-2027.png" alt="capa do livro MOVIMENTE-SE" class="cover-image">
+<h1>MOVIMENTE-SE</h1>
+<h2>Flávio Maia</h2>
 
-  <section class="description">
-    <p><strong>MOVIMENTE-SE…</strong> é um chamado direto para quem se sente preso, parado ou desconectado dos próprios sonhos. Se em algum momento você já disse “minha vida não anda” ou “não sei por onde começar”, este livro é para você.</p>
+<img src="capa-do-livro-MOVIMENTE-SE-2027.png" class="cover">
 
-    <p>Aqui, você vai refletir sobre os ciclos de estagnação, entender como a inércia mental e emocional nos prende e, principalmente, descobrir caminhos práticos para sair desse estado.</p>
-  </section>
+<p class="description">
+<strong>MOVIMENTE-SE</strong> é um chamado direto para quem se sente preso,
+parado ou desconectado dos próprios sonhos.
+</p>
 
-  <!-- Botão de compra direcionando para Hotmart -->
-  <a href="https://go.hotmart.com/E99949797N" target="_blank" class="buy-button" rel="noopener noreferrer">Comprar por R$29,90</a>
+<p class="description">
+Se em algum momento você já pensou
+<strong>"minha vida não anda"</strong> ou
+<strong>"não sei por onde começar"</strong>,
+este livro é para você.
+</p>
+
+<ul class="benefits">
+<li>✔ Entenda os ciclos de estagnação</li>
+<li>✔ Supere a inércia mental e emocional</li>
+<li>✔ Desenvolva clareza e direção</li>
+<li>✔ Descubra caminhos práticos para agir</li>
+<li>✔ Construa a vida que você realmente deseja</li>
+</ul>
+
+<a href="https://go.hotmart.com/E99949797N" target="_blank" class="buy-button">
+Comprar por R$29,90
+</a>
+
+<div class="footer">
+© Flávio Maia
+</div>
+
+</div>
 
 </body>
 </html>
