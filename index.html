@@ -7,65 +7,92 @@
 
 <style>
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: #fff;
+  margin: 0;
+  background: #f4f4f4;
   text-align: center;
 }
 
-.hero {
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 20px;
-  color: #ccc;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 16px 28px;
-  background: #ff6a00;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.section {
-  padding: 60px 20px;
-}
-
-.section h2 {
+.livro {
+  width: 220px;
   margin-bottom: 20px;
 }
 
-.benefits {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
+h1 {
+  font-size: 22px;
+  font-weight: normal;
 }
 
-.benefits li {
-  margin: 12px 0;
-  font-size: 18px;
+.destaque {
+  color: #ff6a00;
+  font-weight: bold;
 }
 
-.prova {
-  background: #1a1a1a;
+.sub {
+  color: #555;
+  margin: 15px 0;
+}
+
+.botoes a {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn1 {
+  background: #ff7a00;
+  color: #fff;
+}
+
+.btn2 {
+  background: #1f3c5c;
+  color: #fff;
+}
+
+.section {
+  background: #fff;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.autor-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 15px;
 }
 
 .footer {
-  padding: 40px 20px;
-  font-size: 14px;
+  background: #111;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer small {
   color: #aaa;
 }
 </style>
@@ -73,72 +100,73 @@ body {
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>MOVIMENTE-SE</h1>
-  <p>Saia da estagnação e retome o controle da sua vida</p>
+<div class="container">
 
-  <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" class="btn">
-    Quero sair da estagnação agora
-  </a>
-</section>
+  <!-- CAPA -->
+  <img src="capa-do-livro-MOVIMENTE-SE-2027.png" class="livro">
 
-<!-- DOR -->
-<section class="section">
-  <h2>Você sente que está travado?</h2>
-  <p>
-    Sabe o que precisa fazer… mas não faz.  
-    Começa e para.  
-    Planeja, mas não executa.
+  <!-- FRASE PRINCIPAL -->
+  <h1>
+    Saia da estagnação e <span class="destaque">retome o controle da sua vida</span>
+  </h1>
+
+  <p class="sub">
+    Um método simples, direto e transformador
   </p>
-</section>
 
-<!-- QUEBRA -->
-<section class="section">
-  <h2>A verdade é simples:</h2>
-  <p>Você não precisa de mais motivação.</p>
-  <p><strong>Você precisa mudar o padrão.</strong></p>
-</section>
+  <!-- BOTÕES -->
+  <div class="botoes">
 
-<!-- BENEFÍCIOS -->
-<section class="section">
-  <h2>O que você vai aprender</h2>
+    <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
+      Quero começar agora no digital
+    </a>
 
-  <ul class="benefits">
-    <li>Desenvolver disciplina e entrar em ação</li>
-    <li>Identificar e quebrar padrões invisíveis</li>
-    <li>Retomar o controle da sua vida</li>
-    <li>Criar consistência mesmo sem motivação</li>
-  </ul>
-</section>
+    <a href="https://loja.uiclap.com/titulo/ua97732/" target="_blank" class="btn2">
+      Receber o livro físico em casa
+    </a>
 
-<!-- PROVA -->
-<section class="section prova">
-  <h2>Quem já leu, mudou</h2>
-  <p>"Esse livro me tirou da inércia."</p>
-  <p>"Simples, direto e transformador."</p>
-  <p>"Me fez agir de verdade."</p>
-</section>
+  </div>
 
-<!-- CTA FINAL -->
-<section class="section">
-  <h2>Seu próximo nível começa com uma decisão</h2>
+  <!-- BENEFÍCIOS -->
+  <div class="section">
+    <h2>Por que ler este livro?</h2>
+    <ul>
+      <li>✔ Desenvolva disciplina e entre em ação</li>
+      <li>✔ Saia da estagnação mental</li>
+      <li>✔ Retome o controle da sua vida</li>
+    </ul>
+  </div>
 
-  <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" class="btn">
-    Quero retomar o controle da minha vida
-  </a>
-</section>
+  <!-- PROVA -->
+  <div class="section">
+    <h2>O que estão dizendo</h2>
+    <p>"Esse livro me tirou da inércia."</p>
+    <p>"Simples, direto e transformador."</p>
+    <p>"Me fez agir de verdade."</p>
+  </div>
 
-<!-- AUTOR -->
-<section class="section">
-  <h2>Sobre o autor</h2>
-  <p>
-    Ajudo pessoas a saírem da estagnação e retomarem o controle da própria vida.
-  </p>
-</section>
+  <!-- AUTOR -->
+  <div class="section">
+    <h2>Sobre o autor</h2>
+    <img src="autor.jpg" class="autor-img">
+    <p><strong>Flávio Maia</strong></p>
+    <p>
+      Ajudo pessoas a saírem da estagnação e retomarem o controle da própria vida.
+    </p>
 
+    <div class="botoes">
+      <a href="#" class="btn1">Saiba mais sobre o autor</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- RODAPÉ -->
 <div class="footer">
-  © 2026 - Flávio Maia
+  <p><strong>O próximo passo é seu</strong></p>
+  <p>Você pode continuar parado ou decidir agir.</p>
+  <p class="destaque">A escolha sempre será sua decisão.</p>
+  <small>© 2026 Flávio Maia</small>
 </div>
 
 </body>
