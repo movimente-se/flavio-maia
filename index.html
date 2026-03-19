@@ -14,19 +14,23 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
   padding: 40px 20px;
 }
 
 .livro {
-  width: 220px;
-  margin-bottom: 20px;
+  width: 300px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  border-radius: 8px;
 }
 
 h1 {
-  font-size: 22px;
-  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.4;
 }
 
 .destaque {
@@ -35,22 +39,30 @@ h1 {
 }
 
 .sub {
-  color: #555;
-  margin: 15px 0;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .botoes a {
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 20px;
-  border-radius: 6px;
+  width: 100%;
+  max-width: 320px;
+  margin: 8px 0;
+  padding: 16px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .btn1 {
-  background: #ff7a00;
+  background: linear-gradient(90deg, #ff7a00, #ff5500);
   color: #fff;
 }
 
@@ -61,13 +73,10 @@ h1 {
 
 .section {
   background: #fff;
-  margin-top: 40px;
-  padding: 30px;
-  border-radius: 8px;
-}
-
-.section h2 {
-  margin-bottom: 15px;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 ul {
@@ -76,13 +85,16 @@ ul {
 }
 
 ul li {
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 16px;
+  text-align: left;
 }
 
 .autor-img {
-  width: 120px;
+  width: 110px;
   border-radius: 50%;
-  margin-top: 15px;
+  margin: 15px auto;
+  display: block;
 }
 
 .footer {
@@ -127,6 +139,18 @@ ul li {
 
   </div>
 
+  <!-- URGÊNCIA -->
+  <p style="font-size: 13px; color: #777; margin-top: 10px;">
+    A decisão que você adia hoje é a vida que continua igual amanhã.
+  </p>
+
+  <!-- QUEBRA -->
+  <div class="section">
+    <h2>A verdade é simples</h2>
+    <p>Você não precisa de mais motivação.</p>
+    <p><strong>Você precisa mudar o padrão.</strong></p>
+  </div>
+
   <!-- BENEFÍCIOS -->
   <div class="section">
     <h2>Por que ler este livro?</h2>
@@ -150,12 +174,37 @@ ul li {
     <h2>Sobre o autor</h2>
     <img src="autor.jpg" class="autor-img">
     <p><strong>Flávio Maia</strong></p>
+
     <p>
       Ajudo pessoas a saírem da estagnação e retomarem o controle da própria vida.
     </p>
 
+    <p>
+      Flávio Maia é autor do livro Movimente-se e dedica seu trabalho a despertar pessoas para uma vida com mais consciência, ação e propósito.
+    </p>
+
     <div class="botoes">
-      <a href="#" class="btn1">Saiba mais sobre o autor</a>
+      <a href="https://uiclap.bio/flaviomaia-movimente-se" target="_blank" class="btn1">
+        Saiba mais sobre o autor →
+      </a>
+    </div>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div class="section">
+    <h2>Seu próximo nível começa com uma decisão</h2>
+    <p>Você pode continuar na mesma… ou começar a mudar hoje.</p>
+
+    <div class="botoes">
+
+      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
+        Quero retomar o controle da minha vida
+      </a>
+
+      <a href="https://loja.uiclap.com/titulo/ua97732/" target="_blank" class="btn2">
+        Quero o livro físico em casa
+      </a>
+
     </div>
   </div>
 
