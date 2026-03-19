@@ -23,41 +23,24 @@ body {
 .livro {
   width: 380px;
   max-width: 95%;
-  display: block;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 25px;
   border-radius: 12px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.25);
   transform: perspective(1000px) rotateY(-6deg);
   transition: 0.4s;
-  animation: fadeUp 0.8s ease;
 }
-
 .livro:hover {
   transform: perspective(1000px) rotateY(0deg) scale(1.03);
-}
-
-/* ANIMAÇÃO */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px) rotateY(-6deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateY(-6deg);
-  }
 }
 
 /* TEXTO */
 h1 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 1.4;
   color: #111;
 }
 
 .sub {
-  font-size: 16px;
   color: #666;
   margin-bottom: 20px;
 }
@@ -77,23 +60,24 @@ h1 {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
-  transition: 0.3s;
+}
+
+/* PULSE */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 .btn1 {
   background: linear-gradient(90deg, #ff7a00, #ff4d00);
   color: #fff;
-  box-shadow: 0 5px 15px rgba(255,100,0,0.3);
+  animation: pulse 2s infinite;
 }
 
 .btn2 {
   background: #1f3c5c;
   color: #fff;
-}
-
-.botoes a:hover {
-  transform: scale(1.05);
 }
 
 /* SEÇÕES */
@@ -102,19 +86,15 @@ h1 {
   margin-top: 30px;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-  animation: fadeUp 0.8s ease;
 }
 
-/* LISTA */
 ul {
   list-style: none;
   padding: 0;
 }
 
 ul li {
-  margin: 12px 0;
-  font-size: 16px;
+  margin: 10px 0;
   text-align: left;
 }
 
@@ -122,21 +102,27 @@ ul li {
 .autor-img {
   width: 110px;
   border-radius: 50%;
-  margin: 15px auto;
-  display: block;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 15px;
 }
 
 /* FOOTER */
 .footer {
   background: #111;
   color: #fff;
-  padding: 30px 20px;
+  padding: 30px;
   margin-top: 40px;
 }
 
-.footer small {
-  color: #aaa;
+/* POPUP */
+#popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
 }
 </style>
 </head>
@@ -145,111 +131,114 @@ ul li {
 
 <div class="container">
 
-  <!-- CAPA -->
-  <img src="capa-do-livro-MOVIMENTE-SE-2027.png" class="livro">
+<img src="capa-do-livro-MOVIMENTE-SE-2027.png" class="livro">
 
-  <!-- FRASE -->
-  <h1>
-    Saia da estagnação e retome o controle da sua vida
-  </h1>
+<h1>Saia da estagnação e retome o controle da sua vida</h1>
 
-  <p class="sub">
-    Um método simples, direto e transformador
-  </p>
+<p class="sub">Um método simples, direto e transformador</p>
 
-  <!-- BOTÕES -->
-  <div class="botoes">
+<div class="botoes">
+<a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
+Quero começar agora no digital
+</a>
 
-    <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
-      Quero começar agora no digital
-    </a>
+<a href="https://loja.uiclap.com/titulo/ua97732/" target="_blank" class="btn2">
+Receber o livro físico em casa
+</a>
+</div>
 
-    <a href="https://loja.uiclap.com/titulo/ua97732/" target="_blank" class="btn2">
-      Receber o livro físico em casa
-    </a>
+<p id="contador" style="color:red; font-weight:bold;">
+⏳ Oferta especial termina em: 02:00:00
+</p>
 
-  </div>
+<p>🔥 Pessoas estão começando agora — não fique parado</p>
 
-  <!-- URGÊNCIA -->
-  <p style="font-size: 13px; color: #777; margin-top: 10px;">
-    A decisão que você adia hoje é a vida que continua igual amanhã.
-  </p>
+<div class="section">
+<h2>A verdade é simples</h2>
+<p>Você não precisa de mais motivação.</p>
+<p><strong>Você precisa mudar o padrão.</strong></p>
+</div>
 
-  <!-- QUEBRA -->
-  <div class="section">
-    <h2>A verdade é simples</h2>
-    <p>Você não precisa de mais motivação.</p>
-    <p><strong>Você precisa mudar o padrão.</strong></p>
-  </div>
+<div class="section">
+<h2>Por que ler este livro?</h2>
+<ul>
+<li>✔ Desenvolva disciplina e entre em ação</li>
+<li>✔ Saia da estagnação mental</li>
+<li>✔ Retome o controle da sua vida</li>
+</ul>
+</div>
 
-  <!-- BENEFÍCIOS -->
-  <div class="section">
-    <h2>Por que ler este livro?</h2>
-    <ul>
-      <li>✔ Desenvolva disciplina e entre em ação</li>
-      <li>✔ Saia da estagnação mental</li>
-      <li>✔ Retome o controle da sua vida</li>
-    </ul>
-  </div>
+<div class="section">
+<h2>O que estão dizendo</h2>
+<p>"Esse livro me tirou da inércia."</p>
+<p>"Simples, direto e transformador."</p>
+<p>"Me fez agir de verdade."</p>
+</div>
 
-  <!-- PROVA -->
-  <div class="section">
-    <h2>O que estão dizendo</h2>
-    <p>"Esse livro me tirou da inércia."</p>
-    <p>"Simples, direto e transformador."</p>
-    <p>"Me fez agir de verdade."</p>
-  </div>
+<div class="section">
+<h2>Sobre o autor</h2>
 
-  <!-- AUTOR -->
-  <div class="section">
-    <h2>Sobre o autor</h2>
+<img src="fotodoautor-flavio-maia.jpg" class="autor-img">
 
-    <img src="fotodoautor-flavio-maia.jpg" class="autor-img">
+<p><strong>Flávio Maia</strong></p>
 
-    <p><strong>Flávio Maia</strong></p>
+<p>Ajudo pessoas a saírem da estagnação e retomarem o controle da própria vida.</p>
 
-    <p>
-      Ajudo pessoas a saírem da estagnação e retomarem o controle da própria vida.
-    </p>
+<p>Flávio Maia é autor do livro Movimente-se e dedica seu trabalho a despertar pessoas para uma vida com mais consciência, ação e propósito.</p>
 
-    <p>
-      Flávio Maia é autor do livro Movimente-se e dedica seu trabalho a despertar pessoas para uma vida com mais consciência, ação e propósito.
-    </p>
+<div class="botoes">
+<a href="https://uiclap.bio/flaviomaia-movimente-se" target="_blank" class="btn1">
+Saiba mais sobre o autor →
+</a>
+</div>
+</div>
 
-    <div class="botoes">
-      <a href="https://uiclap.bio/flaviomaia-movimente-se" target="_blank" class="btn1">
-        Saiba mais sobre o autor →
-      </a>
-    </div>
-  </div>
+<div class="section">
+<h2>Seu próximo nível começa com uma decisão</h2>
 
-  <!-- CTA FINAL -->
-  <div class="section">
-    <h2>Seu próximo nível começa com uma decisão</h2>
-    <p>Você pode continuar na mesma… ou começar a mudar hoje.</p>
-
-    <div class="botoes">
-
-      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
-        Quero retomar o controle da minha vida
-      </a>
-
-      <a href="https://loja.uiclap.com/titulo/ua97732/" target="_blank" class="btn2">
-        Quero o livro físico em casa
-      </a>
-
-    </div>
-  </div>
+<div class="botoes">
+<a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-movimente-se-moahi/E99949797N" target="_blank" class="btn1">
+Quero retomar o controle da minha vida
+</a>
+</div>
+</div>
 
 </div>
 
-<!-- RODAPÉ -->
 <div class="footer">
-  <p><strong>O próximo passo é seu</strong></p>
-  <p>Você pode continuar parado ou decidir agir.</p>
-  <p>A escolha sempre será sua decisão.</p>
-  <small>© 2026 Flávio Maia</small>
+<p>© 2026 Flávio Maia</p>
 </div>
+
+<div id="popup"></div>
+
+<script>
+let tempo = 7200;
+setInterval(() => {
+let h = Math.floor(tempo/3600);
+let m = Math.floor((tempo%3600)/60);
+let s = tempo%60;
+document.getElementById("contador").innerHTML =
+"⏳ Oferta especial termina em: "+
+String(h).padStart(2,'0')+":"+
+String(m).padStart(2,'0')+":"+
+String(s).padStart(2,'0');
+if(tempo>0) tempo--;
+},1000);
+
+const msgs = [
+"🔥 Carlos acabou de comprar",
+"🔥 Ana começou agora",
+"🔥 João decidiu mudar",
+"🔥 Mariana iniciou hoje"
+];
+
+setInterval(()=>{
+let p = document.getElementById("popup");
+p.innerHTML = msgs[Math.floor(Math.random()*msgs.length)];
+p.style.display="block";
+setTimeout(()=>{p.style.display="none"},4000);
+},8000);
+</script>
 
 </body>
 </html>
